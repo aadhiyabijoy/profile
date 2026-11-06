@@ -263,3 +263,4 @@ ${experienceData.certifications.map(c => `• ${c.title} — ${c.issuer} (${c.da
     </AnimatePresence>
   );
 }
+

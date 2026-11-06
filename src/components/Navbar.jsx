@@ -67,11 +67,10 @@ export default function Navbar({ onOpenResume }) {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? 'py-3 bg-dark-900/85 backdrop-blur-xl border-b border-white/10 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.8)]'
           : 'py-5 bg-transparent'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
@@ -111,11 +110,10 @@ export default function Navbar({ onOpenResume }) {
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
                   onMouseEnter={() => sound.playHover()}
-                  className={`relative px-4 py-1.5 rounded-full text-xs font-medium tracking-wide transition-all duration-300 ${
-                    isActive
+                  className={`relative px-4 py-1.5 rounded-full text-xs font-medium tracking-wide transition-all duration-300 ${isActive
                       ? 'text-white font-semibold'
                       : 'text-slate-400 hover:text-white'
-                  }`}
+                    }`}
                 >
                   {isActive && (
                     <motion.div
@@ -198,11 +196,10 @@ export default function Navbar({ onOpenResume }) {
                     key={link.id}
                     href={link.href}
                     onClick={(e) => handleNavClick(e, link.href)}
-                    className={`flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium transition-all ${
-                      isActive
+                    className={`flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium transition-all ${isActive
                         ? 'bg-gradient-to-r from-neon-purple/20 to-neon-blue/20 text-white border border-neon-purple/30'
                         : 'text-slate-300 hover:bg-dark-800 hover:text-white'
-                    }`}
+                      }`}
                   >
                     <span>{link.name}</span>
                     {isActive ? (

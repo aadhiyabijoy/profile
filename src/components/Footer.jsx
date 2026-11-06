@@ -29,7 +29,7 @@ export default function Footer({ onOpenResume }) {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
-          
+
           {/* Brand & Identity Column (Col 1-5) */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center space-x-3">

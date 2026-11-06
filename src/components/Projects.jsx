@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  Sparkles, 
-  ExternalLink, 
-  Github, 
-  Eye, 
-  Layers, 
-  ArrowUpRight 
+import {
+  Sparkles,
+  ExternalLink,
+  Github,
+  Eye,
+  Layers,
+  ArrowUpRight
 } from 'lucide-react';
 import { projectsData } from '../data/portfolioData';
 import ProjectModal from './ProjectModal';
@@ -38,7 +38,7 @@ export default function Projects() {
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-neon-cyan/15 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-dark-800/80 border border-neon-purple/30 text-neon-purple-light font-mono text-xs tracking-wider uppercase">
@@ -65,11 +65,10 @@ export default function Projects() {
                   setFilter(cat);
                 }}
                 onMouseEnter={() => sound.playHover()}
-                className={`px-5 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all duration-300 focus:outline-none ${
-                  filter === cat
+                className={`px-5 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all duration-300 focus:outline-none ${filter === cat
                     ? 'text-white bg-gradient-to-r from-neon-purple to-neon-blue border border-neon-cyan/40 shadow-glow-purple'
                     : 'text-slate-400 bg-dark-800/60 hover:text-white hover:bg-dark-750 border border-white/5'
-                }`}
+                  }`}
               >
                 {cat}
               </button>

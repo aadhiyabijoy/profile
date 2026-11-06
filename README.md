@@ -105,3 +105,4 @@ The contact section includes full client-side validation for Name, Email, Subjec
 2. Formats the message cleanly.
 3. Fires celebratory confetti and dispatches via the verified native `mailto:` protocol directly into your configured email (`contactData.directEmail`).
 4. Provides 1-click clipboard copy for email, phone, location, and profiles.
+
